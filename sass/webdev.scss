@@ -1,0 +1,68 @@
+.web-body {
+    background-image: url("../../assets/web-background2.jpg");
+}
+
+.web-title {
+    line-height: 90px;
+}
+
+#port-title {
+    padding-top: 20px;
+}
+
+.portfolio-web, .contact {
+
+    a { color: white;
+
+        i {
+            color: royalblue;
+        }
+    }
+}
+
+.fa-arrow-left {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+}
+
+.web-description {
+    padding-top: 50px;
+    color: white;
+    text-align: justify;
+    font-family: "Pixel";
+    font-size: 18px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.portfolio-list {
+
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: "Pixel";
+
+        &:hover {
+            color: darken(yellow, 20%);
+        }
+
+        li {
+            padding-bottom: 20px;
+        }
+
+       h1 {
+           text-transform: uppercase;
+           padding-bottom: 5px;
+           font-family: "Beatrix";
+           font-size: 40px;
+       }
+    }
+}

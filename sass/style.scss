@@ -8,28 +8,28 @@
 @import 'webdev';
 
 body {
-    background: url("../../assets/background-img.jpg");
+    background: url("../../assets/gaming-background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 .black-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(0,0,0, .3);
-    z-index: -1;
+    height: 100vh;
+    background: rgba(0,0,0, .5);
     top: 0;
+    background-attachment: fixed;
 }
 
-.my-name {
+.my-name, .web-title, .portfolio-title {
     font-family: "Beatrix";
     font-size: 150px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     color: white;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .thanks, .thanks-t {
@@ -44,18 +44,17 @@ body {
 
 .thanks-t {
     font-size: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .portfolio-links {
     display: flex;
-    margin-top: 50px;
+    padding-top: 20px;
     justify-content: space-around;
-    margin-bottom: 50px;
 
     a {
         text-decoration: none;
-        color: white;
+        
     }
 
     i {
@@ -64,12 +63,14 @@ body {
         color: black;
         padding: 20px;
         border-radius: 100%;
+        box-shadow: 2px 2px;
     }
 
     p {
         text-align: center;
         font-family: monospace;
-        margin-top: 10px;
+        padding-top: 10px;
+        color: white;
     }
 
     .link {

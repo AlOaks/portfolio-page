@@ -59,27 +59,114 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+.contact-body {
+  background: url("../../assets/web-background2.jpg");
+  background-position: left; }
+
+.info-item {
+  color: white;
+  font-family: "Pixel";
+  font-size: 18px;
+  list-style-type: none;
+  padding-bottom: 50px; }
+
+.contact-info {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px; }
+
+.media-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .media-links i {
+    padding: 20px;
+    color: black;
+    background: white;
+    border-radius: 100%;
+    font-size: 30px;
+    color: royalblue; }
+
+.contact-title {
+  font-family: "Beatrix";
+  font-size: 150px;
+  color: white;
+  text-align: center;
+  padding-top: 120px; }
+
+.web-body {
+  background-image: url("../../assets/web-background2.jpg"); }
+
+.web-title {
+  line-height: 90px; }
+
+#port-title {
+  padding-top: 20px; }
+
+.portfolio-web a, .contact a {
+  color: white; }
+  .portfolio-web a i, .contact a i {
+    color: royalblue; }
+
+.fa-arrow-left {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  left: 5%; }
+
+.web-description {
+  padding-top: 50px;
+  color: white;
+  text-align: justify;
+  font-family: "Pixel";
+  font-size: 18px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto; }
+
+.portfolio-list {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto; }
+  .portfolio-list a {
+    text-decoration: none;
+    color: white;
+    font-family: "Pixel"; }
+    .portfolio-list a:hover {
+      color: #999900; }
+    .portfolio-list a li {
+      padding-bottom: 20px; }
+    .portfolio-list a h1 {
+      text-transform: uppercase;
+      padding-bottom: 5px;
+      font-family: "Beatrix";
+      font-size: 40px; }
+
 body {
-  background: url("../../assets/background-img.jpg");
+  background: url("../../assets/gaming-background.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed; }
 
 .black-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: -1;
-  top: 0; }
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  background-attachment: fixed; }
 
-.my-name {
+.my-name, .web-title, .portfolio-title {
   font-family: "Beatrix";
   font-size: 150px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   color: white;
-  margin-top: 100px; }
+  padding-top: 100px; }
 
 .thanks, .thanks-t {
   color: white;
@@ -91,29 +178,30 @@ body {
 
 .thanks-t {
   font-size: 20px;
-  margin-bottom: 20px; }
+  padding-bottom: 20px; }
 
 .portfolio-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  padding-top: 20px;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 50px; }
+      justify-content: space-around; }
   .portfolio-links a {
-    text-decoration: none;
-    color: white; }
+    text-decoration: none; }
   .portfolio-links i {
     text-align: center;
     background: white;
     color: black;
     padding: 20px;
-    border-radius: 100%; }
+    border-radius: 100%;
+    -webkit-box-shadow: 2px 2px;
+            box-shadow: 2px 2px; }
   .portfolio-links p {
     text-align: center;
     font-family: monospace;
-    margin-top: 10px; }
+    padding-top: 10px;
+    color: white; }
   .portfolio-links .link {
     display: -webkit-box;
     display: -ms-flexbox;
