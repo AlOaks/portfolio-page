@@ -1,10 +1,21 @@
 @font-face {
     font-family: 'Pixel';
-    src: url('../../../fonts/Pixel.eot');
-    src: url('../../../fonts/Pixel.eot?#iefix') format('embedded-opentype'),
-        url('../../../fonts/Pixel.woff2') format('woff2'),
-        url('../../../fonts/Pixel.woff') format('woff'),
-        url('../../../fonts/Pixel.svg#Pixel') format('svg');
+    src: url('../../fonts/Pixel/Pixel.eot');
+    src: url('../../fonts/Pixel/Pixel.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Pixel/Pixel.woff2') format('woff2'),
+        url('../../../fonts/Pixel/Pixel.woff') format('woff'),
+        url('../../fonts/Pixel/Pixel.svg#Pixel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beatrix';
+    src: url('../../fonts/Beatrix/BeatrixSignature.eot');
+    src: url('../../fonts/Beatrix/BeatrixSignature.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Beatrix/BeatrixSignature.woff2') format('woff2'),
+        url('../../fonts/Beatrix/BeatrixSignature.woff') format('woff'),
+        url('../../fonts/Beatrix/BeatrixSignature.svg#BeatrixSignature') format('svg');
     font-weight: normal;
     font-style: normal;
 }

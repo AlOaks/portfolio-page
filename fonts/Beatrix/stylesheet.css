@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Beatrix Signature';
+    src: url('BeatrixSignature.eot');
+    src: url('BeatrixSignature.eot?#iefix') format('embedded-opentype'),
+        url('BeatrixSignature.woff2') format('woff2'),
+        url('BeatrixSignature.woff') format('woff'),
+        url('BeatrixSignature.svg#BeatrixSignature') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
