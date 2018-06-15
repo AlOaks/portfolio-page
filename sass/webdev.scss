@@ -1,5 +1,5 @@
 .web-body {
-    background-image: url("../../assets/web-background2.jpg");
+    background-image: url("../../assets/coding-back.jpg");
 }
 
 .web-title {
@@ -12,10 +12,23 @@
 
 .portfolio-web, .contact {
 
+    padding-top: 50px;
+
     a { color: white;
 
+
         i {
-            color: royalblue;
+            color: gray;
+
+            @include desktop {
+                font-size: 40px;
+                padding: 23px;
+            }
+
+            &:hover {
+                color: white;
+                background: gray;
+            }
         }
     }
 }
@@ -30,6 +43,7 @@
 
 .web-description {
     padding-top: 50px;
+    padding-bottom: -20px;
     color: white;
     text-align: justify;
     font-family: "Pixel";
@@ -37,13 +51,60 @@
     width: 90%;
     margin-right: auto;
     margin-left: auto;
+
+    @include desktop {
+        padding-top: 80px;
+    }
 }
 
 .portfolio-list {
-
-    width: 90%;
+    padding-bottom: 50px;
     margin-right: auto;
     margin-left: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    
+
+    .portfolio-item {
+        flex-basis: 45%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+
+        @include tablet {
+            height: 400px;
+        }
+
+        @include desktop {
+            height: 500px;
+        }
+
+        img {
+            width: 90%;
+            height: 100px;
+            padding-bottom: 20px;
+
+            @include tablet {
+                height: 200px;
+            }
+
+            @include desktop {
+                height: 300px;
+            }
+        }
+
+
+        p {
+            width: 90%;
+
+            @include desktop {
+                font-size: 20px;
+            }
+        }
+    }
     
     a {
         text-decoration: none;
@@ -54,15 +115,15 @@
             color: darken(yellow, 20%);
         }
 
-        li {
-            padding-bottom: 20px;
-        }
-
        h1 {
-           text-transform: uppercase;
+           text-transform: capitalize;
            padding-bottom: 5px;
            font-family: "Beatrix";
-           font-size: 40px;
+           font-size: 60px;
+
+           @include desktop {
+               font-size: 80px;
+           }
        }
     }
 }

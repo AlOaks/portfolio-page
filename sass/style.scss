@@ -11,15 +11,22 @@ body {
     background: url("../../assets/gaming-background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
 
-.black-overlay {
+.black-overlay, .black-overlay1 {
+    width: 100%;
     height: 100vh;
-    background: rgba(0,0,0, .5);
+    position: absolute;
     top: 0;
-    background-attachment: fixed;
+    left: 0;
+    background: rgba(0,0,0, .5);
+    z-index: -1;
+}
+
+.black-overlay1 {
+    height: 100%;
 }
 
 .my-name, .web-title, .portfolio-title {
@@ -30,6 +37,10 @@ body {
     margin-right: auto;
     color: white;
     padding-top: 100px;
+
+    @include desktop {
+        font-size: 250px;
+    }
 }
 
 .thanks, .thanks-t {
@@ -49,8 +60,30 @@ body {
 
 .portfolio-links {
     display: flex;
-    padding-top: 20px;
+    padding-top: 30px;
     justify-content: space-around;
+
+    @include desktop {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+
+        p {
+            visibility: hidden;
+            font-size: 20px;
+        }
+
+        a {
+            &:hover {
+                p {
+                    visibility: visible;
+                    transition: .5s;
+                }
+            }
+        }
+
+    }
 
     a {
         text-decoration: none;
@@ -63,7 +96,16 @@ body {
         color: black;
         padding: 20px;
         border-radius: 100%;
-        box-shadow: 2px 2px;
+
+        @include desktop {
+            font-size: 40px;
+            padding: 23px 22px;
+        }
+
+        &:hover {
+            color: white;
+            background-color: darkgray;
+        }
     }
 
     p {
