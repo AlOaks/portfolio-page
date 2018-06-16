@@ -43,6 +43,13 @@ body {
     }
 }
 
+.my-name {
+
+    @include desktop {
+        padding-top: 50px;
+    }
+}
+
 .thanks, .thanks-t {
 
     color: white;

@@ -1,3 +1,105 @@
 .audio-body {
     background: url("../../assets/audio-back.jpg");
 }
+
+.audios {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .audio-container {
+        background: rgba(107, 106, 106, 0.6);
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+       border-radius: 5px;
+    }
+
+    h1 {
+        color: white;
+        font-family: "Beatrix";
+        font-size: 60px;
+    }
+
+    p {
+        color: white;
+        font-family: "Pixel";
+    }
+
+    i {
+        color: white;
+        padding-top: 20px;
+        font-size: 20px;
+
+        &:hover {
+            color: yellowgreen;
+        }
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            font-size: 80px;
+        }
+
+
+        .audio-container {
+            width: 28%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .audio-controls {
+
+                i {
+                    font-size: 40px;
+                    align-self: flex-end;
+                }
+            }
+        }
+
+    }
+
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            font-size: 80px;
+        }
+
+
+        .audio-container {
+            width: 30%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .audio-controls {
+
+                i {
+                    font-size: 40px;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}

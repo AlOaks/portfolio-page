@@ -125,6 +125,108 @@ table {
 .audio-body {
   background: url("../../assets/audio-back.jpg"); }
 
+.audios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .audios .audio-container {
+    background: rgba(107, 106, 106, 0.6);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px; }
+  .audios h1 {
+    color: white;
+    font-family: "Beatrix";
+    font-size: 60px; }
+  .audios p {
+    color: white;
+    font-family: "Pixel"; }
+  .audios i {
+    color: white;
+    padding-top: 20px;
+    font-size: 20px; }
+    .audios i:hover {
+      color: yellowgreen; }
+  @media (min-width: 620px) {
+    .audios {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      .audios h1 {
+        font-size: 80px; }
+      .audios .audio-container {
+        width: 28%;
+        height: 300px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        .audios .audio-container .audio-controls i {
+          font-size: 40px;
+          -ms-flex-item-align: end;
+              align-self: flex-end; } }
+  @media (min-width: 1080px) {
+    .audios {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      .audios h1 {
+        font-size: 80px; }
+      .audios .audio-container {
+        width: 30%;
+        height: 200px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        .audios .audio-container .audio-controls i {
+          font-size: 40px;
+          -ms-flex-item-align: end;
+              align-self: flex-end; } }
+
 .web-body {
   background-image: url("../../assets/coding-back.jpg"); }
 
@@ -154,6 +256,13 @@ table {
   position: absolute;
   top: 20px;
   left: 5%; }
+
+.fa-home {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  left: 10%; }
 
 .web-description {
   padding-top: 50px;
@@ -253,6 +362,10 @@ body {
   @media (min-width: 1080px) {
     .my-name, .web-title, .portfolio-title {
       font-size: 250px; } }
+
+@media (min-width: 1080px) {
+  .my-name {
+    padding-top: 50px; } }
 
 .thanks, .thanks-t {
   color: white;
