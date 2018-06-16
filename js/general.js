@@ -1,6 +1,6 @@
 $(document).ready(function (){
     
-    var battleborn = new Audio ("../assets/BattleBorn.wav");
+    var battleborn = new Audio ("../assets/battleborn.wav");
     var nightsky = new Audio ("../assets/NightSky.wav");
     var tragic = new Audio ("../assets/tragic.wav");
 
