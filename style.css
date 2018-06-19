@@ -229,7 +229,7 @@ table {
 
 .web-body {
   background-image: url("../../assets/coding-back.jpg");
-  background-attachment: none; }
+  background-attachment: scroll; }
 
 .web-title {
   line-height: 90px; }
