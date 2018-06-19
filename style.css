@@ -287,8 +287,7 @@ table {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 50px; }
+      flex-wrap: wrap; }
   .portfolio-list .portfolio-item {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
@@ -336,7 +335,6 @@ body {
   background: url("../../assets/gaming-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative; }
 
 .black-overlay, .black-overlay1 {
