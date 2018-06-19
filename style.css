@@ -91,7 +91,7 @@ table {
     border-radius: 100%;
     font-size: 30px;
     color: royalblue; }
-    @media (min-width: 1080px) {
+    @media (min-width: 1024px) {
       .media-links i {
         font-size: 40px; } }
     .media-links i:hover {
@@ -106,7 +106,7 @@ table {
   margin-right: auto;
   font-family: "Pixel";
   font-size: 18px; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1024px) {
     .contact-thanks {
       font-size: 20px; } }
 
@@ -118,7 +118,7 @@ table {
   padding-top: 80px;
   margin-left: auto;
   margin-right: auto; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1024px) {
     .contact-title {
       font-size: 250px; } }
 
@@ -191,7 +191,7 @@ table {
           font-size: 40px;
           -ms-flex-item-align: end;
               align-self: flex-end; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1024px) {
     .audios {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -247,7 +247,7 @@ table {
     color: white; }
     .portfolio-web a i, .contact a i {
       color: gray; }
-      @media (min-width: 1080px) {
+      @media (min-width: 1024px) {
         .portfolio-web a i, .contact a i {
           font-size: 40px;
           padding: 23px; } }
@@ -279,7 +279,7 @@ table {
   width: 90%;
   margin-right: auto;
   margin-left: auto; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1024px) {
     .web-description {
       padding-top: 80px; } }
 
@@ -303,7 +303,7 @@ table {
     @media (min-width: 620px) {
       .portfolio-list .portfolio-item {
         height: 400px; } }
-    @media (min-width: 1080px) {
+    @media (min-width: 1024px) {
       .portfolio-list .portfolio-item {
         height: 500px; } }
     .portfolio-list .portfolio-item img {
@@ -313,12 +313,12 @@ table {
       @media (min-width: 620px) {
         .portfolio-list .portfolio-item img {
           height: 200px; } }
-      @media (min-width: 1080px) {
+      @media (min-width: 1024px) {
         .portfolio-list .portfolio-item img {
           height: 300px; } }
     .portfolio-list .portfolio-item p {
       width: 90%; }
-      @media (min-width: 1080px) {
+      @media (min-width: 1024px) {
         .portfolio-list .portfolio-item p {
           font-size: 20px; } }
   .portfolio-list a {
@@ -332,7 +332,7 @@ table {
       padding-bottom: 5px;
       font-family: "Beatrix";
       font-size: 60px; }
-      @media (min-width: 1080px) {
+      @media (min-width: 1024px) {
         .portfolio-list a h1 {
           font-size: 80px; } }
 
@@ -342,6 +342,35 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative; }
+
+footer {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 50px; }
+  footer .reach {
+    color: white;
+    font-size: 20px;
+    font-family: 'Pixel';
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    text-align: center; }
+    @media (min-width: 1024px) {
+      footer .reach {
+        font-size: 40px; } }
+  footer h1 {
+    color: white;
+    font-size: 16px;
+    font-family: 'Pixel';
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; }
+    @media (min-width: 1024px) {
+      footer h1 {
+        width: 40%; } }
 
 .black-overlay, .black-overlay1 {
   width: 100%;
@@ -364,11 +393,11 @@ body {
   margin-right: auto;
   color: white;
   padding-top: 100px; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1024px) {
     .my-name, .web-title, .portfolio-title {
       font-size: 250px; } }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .my-name {
     padding-top: 50px; } }
 
@@ -384,47 +413,110 @@ body {
   font-size: 20px;
   padding-bottom: 20px; }
 
-.portfolio-links {
+.thanks {
+  padding-bottom: 25px; }
+
+.home-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  @media (min-width: 1080px) {
-    .portfolio-links {
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 50px; }
-      .portfolio-links p {
-        visibility: hidden;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+  border-top: 1px dashed gray; }
+  @media (min-width: 1024px) {
+    .home-links .hidden, .home-links .hiddenw {
+      visibility: hidden; } }
+  .home-links .circles {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    display: grid;
+    grid-template-areas: "about audio web aboutw" "music audio web code" "down audio web downw"; }
+    .home-links .circles .music-circle {
+      grid-area: audio; }
+      .home-links .circles .music-circle i {
+        padding: 20px;
         font-size: 20px; }
-      .portfolio-links a:hover p {
-        visibility: visible;
-        -webkit-transition: .5s;
-        transition: .5s; } }
-  .portfolio-links a {
-    text-decoration: none; }
-  .portfolio-links i {
-    text-align: center;
-    background: white;
-    color: black;
-    padding: 20px;
-    border-radius: 100%; }
-    @media (min-width: 1080px) {
-      .portfolio-links i {
-        font-size: 40px;
-        padding: 23px 22px; } }
-    .portfolio-links i:hover {
-      color: white;
-      background-color: darkgray; }
-  .portfolio-links p {
-    text-align: center;
-    font-family: monospace;
-    padding-top: 10px;
-    color: white; }
-  .portfolio-links .link {
+        @media (min-width: 1024px) {
+          .home-links .circles .music-circle i {
+            font-size: 40px; } }
+      @media (min-width: 1024px) {
+        .home-links .circles .music-circle p {
+          font-size: 30px; } }
+    .home-links .circles .about-circle {
+      grid-area: about;
+      margin-right: -50px; }
+      .home-links .circles .about-circle i {
+        padding: 15px;
+        font-size: 15px; }
+      @media (min-width: 1024px) {
+        .home-links .circles .about-circle p {
+          font-size: 20px; } }
+    .home-links .circles .audios-circle {
+      grid-area: music; }
+      .home-links .circles .audios-circle i {
+        padding: 15px;
+        font-size: 15px; }
+      @media (min-width: 1024px) {
+        .home-links .circles .audios-circle p {
+          font-size: 20px; } }
+    .home-links .circles .down-circle {
+      grid-area: down;
+      margin-right: -50px; }
+      .home-links .circles .down-circle i {
+        padding: 15px;
+        font-size: 15px; }
+      @media (min-width: 1024px) {
+        .home-links .circles .down-circle p {
+          font-size: 20px; } }
+    .home-links .circles .web-circle {
+      grid-area: web; }
+      .home-links .circles .web-circle i {
+        padding: 20px;
+        font-size: 20px; }
+        @media (min-width: 1024px) {
+          .home-links .circles .web-circle i {
+            font-size: 40px; } }
+      @media (min-width: 1024px) {
+        .home-links .circles .web-circle p {
+          font-size: 30px; } }
+    .home-links .circles .aboutw-circle {
+      grid-area: aboutw;
+      margin-left: -50px; }
+      .home-links .circles .aboutw-circle i {
+        padding: 15px;
+        font-size: 15px; }
+      @media (min-width: 1024px) {
+        .home-links .circles .aboutw-circle p {
+          font-size: 20px; } }
+    .home-links .circles .code-circle {
+      grid-area: code; }
+      .home-links .circles .code-circle i {
+        padding: 15px;
+        font-size: 15px; }
+      @media (min-width: 1024px) {
+        .home-links .circles .code-circle p {
+          font-size: 20px; } }
+    .home-links .circles .downw-circle {
+      grid-area: downw;
+      margin-left: -50px; }
+      .home-links .circles .downw-circle i {
+        padding: 15px;
+        font-size: 15px; }
+      @media (min-width: 1024px) {
+        .home-links .circles .downw-circle p {
+          font-size: 20px; } }
+  .home-links .circle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -438,3 +530,33 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .home-links a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .home-links i {
+    color: black;
+    background: white;
+    border-radius: 100%;
+    text-align: center; }
+    @media (min-width: 1024px) {
+      .home-links i:hover {
+        color: red;
+        background: grey; } }
+  .home-links p {
+    color: white;
+    text-align: center;
+    font-family: 'Pixel';
+    font-size: 12px;
+    padding-top: 10px; }

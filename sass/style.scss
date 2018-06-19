@@ -15,6 +15,42 @@ body {
     position: relative;
 }
 
+footer {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 50px;
+
+    .reach {
+        color: white;
+        font-size: 20px;
+        font-family: 'Pixel';
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        text-align: center;
+
+        @include desktop {
+            font-size: 40px;
+        }
+    }
+
+    h1 {
+        color: white;
+        font-size: 16px;
+        font-family: 'Pixel';
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+
+        @include desktop {
+            width: 40%;
+        }
+    }
+}
+
 .black-overlay, .black-overlay1 {
     width: 100%;
     height: 100vh;
@@ -66,68 +102,214 @@ body {
     padding-bottom: 20px;
 }
 
-.portfolio-links {
-    display: flex;
-    padding-top: 30px;
-    justify-content: space-around;
+.thanks {
+    padding-bottom: 25px;
+}
 
-    @include desktop {
-        width: 50%;
+.home-links {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    border-top: 1px dashed gray;
+
+    .hidden, .hiddenw {
+
+        @include desktop {
+            visibility: hidden;
+        }
+    }
+
+
+    .circles {
         margin-left: auto;
         margin-right: auto;
-        padding-top: 50px;
+        width: 90%;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        display: grid;
+        grid-template-areas: "about audio web aboutw"
+                            "music audio web code"
+                            "down audio web downw"; 
 
-        p {
-            visibility: hidden;
-            font-size: 20px;
-        }
+        .music-circle {
+            grid-area: audio;
 
-        a {
-            &:hover {
-                p {
-                    visibility: visible;
-                    transition: .5s;
+            i {
+                padding: 20px;
+                font-size: 20px;
+
+                @include desktop {
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                @include desktop {
+                    font-size: 30px;
                 }
             }
         }
 
+        .about-circle {
+            grid-area: about;
+            margin-right: -50px;
+
+            i {
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            p {
+                @include desktop {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .audios-circle {
+            grid-area: music;
+
+            i {
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            p {
+                @include desktop {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .down-circle {
+            grid-area: down;
+            margin-right: -50px;
+
+
+            i {
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            p {
+                @include desktop {
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+        .web-circle {
+            grid-area: web;
+
+            i {
+                padding: 20px;
+                font-size: 20px;
+
+                @include desktop {
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                @include desktop {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .aboutw-circle {
+            grid-area: aboutw;
+            margin-left: -50px;
+
+
+            i {
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            p {
+                @include desktop {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .code-circle {
+            grid-area: code;
+
+            i {
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            p {
+                @include desktop {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .downw-circle {
+            grid-area: downw;
+            margin-left: -50px;
+
+
+            i {
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            p {
+                @include desktop {
+                    font-size: 20px;
+                }
+            }   
+        }
+    }
+
+     
+
+    .circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
     }
 
     a {
         text-decoration: none;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
     }
-
+    
     i {
-        text-align: center;
-        background: white;
         color: black;
-        padding: 20px;
+        background: white;
         border-radius: 100%;
+        text-align: center;
 
         @include desktop {
-            font-size: 40px;
-            padding: 23px 22px;
-        }
 
-        &:hover {
-            color: white;
-            background-color: darkgray;
+            &:hover {
+                color: red;
+                background: grey;
+            }
         }
     }
 
     p {
-        text-align: center;
-        font-family: monospace;
-        padding-top: 10px;
         color: white;
-    }
-
-    .link {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        font-family: 'Pixel';
+        font-size: 12px;
+        padding-top: 10px;
     }
 }
 
