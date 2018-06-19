@@ -229,6 +229,10 @@ table {
 
 .web-body {
   background-image: url("../../assets/coding-back.jpg");
+  background-attachment: fixed; }
+
+.pweb-body {
+  background-image: url("../../assets/coding-back.jpg");
   background-attachment: scroll; }
 
 .web-title {
