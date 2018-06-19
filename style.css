@@ -228,9 +228,7 @@ table {
               align-self: flex-end; } }
 
 .web-body {
-  background-image: url("../../assets/coding-back.jpg"); }
-
-.black-overlay12 {
+  background-image: url("../../assets/coding-back.jpg");
   background-attachment: none; }
 
 .web-title {
