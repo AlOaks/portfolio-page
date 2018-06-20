@@ -3,23 +3,105 @@
 @import 'mixins';
 @import 'variables';
 @import 'about';
-@import 'contact';
 @import 'audio';
 @import 'webdev';
 
 body {
-    background: url("../../assets/gaming-background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgb(61, 61, 61), white );
     background-attachment: fixed;
-    position: relative;
+}
+
+.home-icon {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 10;
+
+    i {
+
+        color: white;
+        font-size: 30px;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 500px;
+    flex-wrap: wrap;
+    left: 5%;
+    top: 15%;
+
+    p {
+        color: white;
+        font-family: 'Pixel';
+        padding-bottom: 10px;
+        font-size: 0px;
+        transition-duration: 1s;
+    }
+
+    h1 {
+        color: white;
+        font-family: 'Pixel';
+        width: 100%;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    
+
+    .info {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .icons {
+        width: 5%;
+        display: flex; 
+        flex-direction: column;
+        font-size: 20px;
+
+    }
+
+    i {
+        color: white;
+        padding-bottom: 10px;
+
+        &:hover {
+            color: red;
+        }
+    }
 }
 
 footer {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 50px;
+    width: 100%;
+    background: black;
+    padding-bottom: 115px;
+
+    i {
+        color: white;
+        font-size: 50px;
+        text-align: center;
+
+        &:hover {
+            color: red;
+        }
+
+    }
+
+    .footer-icons {
+        width: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
     .reach {
         color: white;
@@ -29,6 +111,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 30px;
+        padding-top: 30px;
         text-align: center;
 
         @include desktop {
@@ -36,35 +119,10 @@ footer {
         }
     }
 
-    h1 {
-        color: white;
-        font-size: 16px;
-        font-family: 'Pixel';
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
 
-        @include desktop {
-            width: 40%;
-        }
-    }
 }
 
-.black-overlay, .black-overlay1 {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0, .5);
-    z-index: -1;
-}
 
-.black-overlay1 {
-    height: 100%;
-    position: absolute;
-}
 
 .my-name, .web-title, .portfolio-title {
     font-family: "Beatrix";
@@ -89,7 +147,7 @@ footer {
 
 .thanks, .thanks-t {
 
-    color: white;
+    color: black;
     font-family: 'Pixel';
     text-align: center;
     width: 80%;
@@ -103,7 +161,28 @@ footer {
 }
 
 .thanks {
-    padding-bottom: 25px;
+    padding-top: 25px;
+    border-top: 1px dashed black;
+}
+
+.social-btns {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+        font-family: 'Pixel';
+        padding: 20px 25px;
+        color: black;
+        font-size: 30px;
+
+        &:hover {
+            color: red;
+        }
+    }
 }
 
 .home-links {
@@ -114,7 +193,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding-top: 25px;
-    border-top: 1px dashed gray;
+    margin-bottom: 50px;
 
     .hidden, .hiddenw {
 
@@ -131,9 +210,9 @@ footer {
         grid-column-gap: 20px;
         grid-row-gap: 10px;
         display: grid;
-        grid-template-areas: "about audio web aboutw"
-                            "music audio web code"
-                            "down audio web downw"; 
+        grid-template-areas: "aboutw web audio about"
+                            "code web audio music"
+                            "downw web audio down"; 
 
         .music-circle {
             grid-area: audio;
@@ -156,11 +235,11 @@ footer {
 
         .about-circle {
             grid-area: about;
-            margin-right: -50px;
+            margin-left: -50px;
 
             i {
                 padding: 15px;
-                font-size: 15px;
+                font-size: 20px;
             }
 
             p {
@@ -175,7 +254,7 @@ footer {
 
             i {
                 padding: 15px;
-                font-size: 15px;
+                font-size: 20px;
             }
 
             p {
@@ -187,12 +266,12 @@ footer {
 
         .down-circle {
             grid-area: down;
-            margin-right: -50px;
+            margin-left: -50px;
 
 
             i {
                 padding: 15px;
-                font-size: 15px;
+                font-size: 20px;
             }
 
             p {
@@ -209,6 +288,7 @@ footer {
             i {
                 padding: 20px;
                 font-size: 20px;
+                
 
                 @include desktop {
                     font-size: 40px;
@@ -224,12 +304,12 @@ footer {
 
         .aboutw-circle {
             grid-area: aboutw;
-            margin-left: -50px;
+            margin-right: -50px;
 
 
             i {
                 padding: 15px;
-                font-size: 15px;
+                font-size: 20px;
             }
 
             p {
@@ -244,7 +324,7 @@ footer {
 
             i {
                 padding: 15px;
-                font-size: 15px;
+                font-size: 20px;
             }
 
             p {
@@ -256,12 +336,12 @@ footer {
 
         .downw-circle {
             grid-area: downw;
-            margin-left: -50px;
+            margin-right: -50px;
 
 
             i {
                 padding: 15px;
-                font-size: 15px;
+                font-size: 20px;
             }
 
             p {
@@ -291,7 +371,6 @@ footer {
     
     i {
         color: black;
-        background: white;
         border-radius: 100%;
         text-align: center;
 
@@ -299,13 +378,12 @@ footer {
 
             &:hover {
                 color: red;
-                background: grey;
             }
         }
     }
 
     p {
-        color: white;
+        color: black;
         text-align: center;
         font-family: 'Pixel';
         font-size: 12px;

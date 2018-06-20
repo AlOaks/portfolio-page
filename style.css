@@ -59,71 +59,9 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-.contact-body {
-  background: url("../../assets/contact-bkg.jpg");
-  background-position: center; }
-
-.info-item {
-  color: white;
-  font-family: "Pixel";
-  font-size: 18px;
-  list-style-type: none;
-  padding-bottom: 20px; }
-
-.contact-info {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px; }
-  .contact-info i {
-    margin-right: 5px; }
-
-.media-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .media-links i {
-    padding: 20px;
-    color: black;
-    background: white;
-    border-radius: 100%;
-    font-size: 30px;
-    color: royalblue; }
-    @media (min-width: 1024px) {
-      .media-links i {
-        font-size: 40px; } }
-    .media-links i:hover {
-      color: white;
-      background: royalblue; }
-
-.contact-thanks {
-  color: white;
-  text-align: justify;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Pixel";
-  font-size: 18px; }
-  @media (min-width: 1024px) {
-    .contact-thanks {
-      font-size: 20px; } }
-
-.contact-title {
-  font-family: "Beatrix";
-  font-size: 150px;
-  color: white;
-  text-align: center;
-  padding-top: 80px;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (min-width: 1024px) {
-    .contact-title {
-      font-size: 250px; } }
-
 .audio-body {
-  background: url("../../assets/audio-back.jpg"); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#3d3d3d), to(white));
+  background: linear-gradient(#3d3d3d, white); }
 
 .audios {
   display: -webkit-box;
@@ -155,7 +93,7 @@ table {
     padding-top: 20px;
     font-size: 20px; }
     .audios i:hover {
-      color: yellowgreen; }
+      color: red; }
   @media (min-width: 620px) {
     .audios {
       display: -webkit-box;
@@ -228,12 +166,13 @@ table {
               align-self: flex-end; } }
 
 .web-body {
-  background-image: url("../../assets/coding-back.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#3d3d3d), to(white));
+  background: linear-gradient(#3d3d3d, white);
   background-attachment: fixed; }
 
 .pweb-body {
-  background-image: url("../../assets/coding-back.jpg");
-  background-attachment: scroll; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#3d3d3d), to(white));
+  background: linear-gradient(#3d3d3d, white); }
 
 .web-title {
   line-height: 90px; }
@@ -255,23 +194,8 @@ table {
         color: white;
         background: gray; }
 
-.fa-arrow-left {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 20px;
-  left: 5%; }
-
-.fa-home {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 20px;
-  left: 10%; }
-
 .web-description {
   padding-top: 50px;
-  padding-bottom: -20px;
   color: white;
   text-align: justify;
   font-family: "Pixel";
@@ -281,7 +205,8 @@ table {
   margin-left: auto; }
   @media (min-width: 1024px) {
     .web-description {
-      padding-top: 80px; } }
+      padding-top: 80px;
+      margin-bottom: 100px; } }
 
 .portfolio-list {
   padding-bottom: 50px;
@@ -323,7 +248,7 @@ table {
           font-size: 20px; } }
   .portfolio-list a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: "Pixel"; }
     .portfolio-list a:hover {
       color: #999900; }
@@ -334,20 +259,92 @@ table {
       font-size: 60px; }
       @media (min-width: 1024px) {
         .portfolio-list a h1 {
-          font-size: 80px; } }
+          font-size: 80px;
+          color: black; } }
 
 body {
-  background: url("../../assets/gaming-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#3d3d3d), to(white));
+  background: linear-gradient(#3d3d3d, white);
+  background-attachment: fixed; }
+
+.home-icon {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 10; }
+  .home-icon i {
+    color: white;
+    font-size: 30px; }
+    .home-icon i:hover {
+      color: red; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 500px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  left: 5%;
+  top: 15%; }
+  header p {
+    color: white;
+    font-family: 'Pixel';
+    padding-bottom: 10px;
+    font-size: 0px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s; }
+  header h1 {
+    color: white;
+    font-family: 'Pixel';
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 20px; }
+  header .info {
+    width: 95%;
+    font-size: 20px; }
+  header .icons {
+    width: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 20px; }
+  header i {
+    color: white;
+    padding-bottom: 10px; }
+    header i:hover {
+      color: red; }
 
 footer {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 50px; }
+  width: 100%;
+  background: black;
+  padding-bottom: 115px; }
+  footer i {
+    color: white;
+    font-size: 50px;
+    text-align: center; }
+    footer i:hover {
+      color: red; }
+  footer .footer-icons {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   footer .reach {
     color: white;
     font-size: 20px;
@@ -356,34 +353,11 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 30px;
+    padding-top: 30px;
     text-align: center; }
     @media (min-width: 1024px) {
       footer .reach {
         font-size: 40px; } }
-  footer h1 {
-    color: white;
-    font-size: 16px;
-    font-family: 'Pixel';
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px; }
-    @media (min-width: 1024px) {
-      footer h1 {
-        width: 40%; } }
-
-.black-overlay, .black-overlay1 {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1; }
-
-.black-overlay1 {
-  height: 100%;
-  position: absolute; }
 
 .my-name, .web-title, .portfolio-title {
   font-family: "Beatrix";
@@ -402,7 +376,7 @@ footer {
     padding-top: 50px; } }
 
 .thanks, .thanks-t {
-  color: white;
+  color: black;
   font-family: 'Pixel';
   text-align: center;
   width: 80%;
@@ -414,7 +388,26 @@ footer {
   padding-bottom: 20px; }
 
 .thanks {
-  padding-bottom: 25px; }
+  padding-top: 25px;
+  border-top: 1px dashed black; }
+
+.social-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .social-btns a {
+    text-decoration: none;
+    font-family: 'Pixel';
+    padding: 20px 25px;
+    color: black;
+    font-size: 30px; }
+    .social-btns a:hover {
+      color: red; }
 
 .home-links {
   display: -webkit-box;
@@ -430,7 +423,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 25px;
-  border-top: 1px dashed gray; }
+  margin-bottom: 50px; }
   @media (min-width: 1024px) {
     .home-links .hidden, .home-links .hiddenw {
       visibility: hidden; } }
@@ -441,7 +434,7 @@ footer {
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     display: grid;
-    grid-template-areas: "about audio web aboutw" "music audio web code" "down audio web downw"; }
+    grid-template-areas: "aboutw web audio about" "code web audio music" "downw web audio down"; }
     .home-links .circles .music-circle {
       grid-area: audio; }
       .home-links .circles .music-circle i {
@@ -455,10 +448,10 @@ footer {
           font-size: 30px; } }
     .home-links .circles .about-circle {
       grid-area: about;
-      margin-right: -50px; }
+      margin-left: -50px; }
       .home-links .circles .about-circle i {
         padding: 15px;
-        font-size: 15px; }
+        font-size: 20px; }
       @media (min-width: 1024px) {
         .home-links .circles .about-circle p {
           font-size: 20px; } }
@@ -466,16 +459,16 @@ footer {
       grid-area: music; }
       .home-links .circles .audios-circle i {
         padding: 15px;
-        font-size: 15px; }
+        font-size: 20px; }
       @media (min-width: 1024px) {
         .home-links .circles .audios-circle p {
           font-size: 20px; } }
     .home-links .circles .down-circle {
       grid-area: down;
-      margin-right: -50px; }
+      margin-left: -50px; }
       .home-links .circles .down-circle i {
         padding: 15px;
-        font-size: 15px; }
+        font-size: 20px; }
       @media (min-width: 1024px) {
         .home-links .circles .down-circle p {
           font-size: 20px; } }
@@ -492,10 +485,10 @@ footer {
           font-size: 30px; } }
     .home-links .circles .aboutw-circle {
       grid-area: aboutw;
-      margin-left: -50px; }
+      margin-right: -50px; }
       .home-links .circles .aboutw-circle i {
         padding: 15px;
-        font-size: 15px; }
+        font-size: 20px; }
       @media (min-width: 1024px) {
         .home-links .circles .aboutw-circle p {
           font-size: 20px; } }
@@ -503,16 +496,16 @@ footer {
       grid-area: code; }
       .home-links .circles .code-circle i {
         padding: 15px;
-        font-size: 15px; }
+        font-size: 20px; }
       @media (min-width: 1024px) {
         .home-links .circles .code-circle p {
           font-size: 20px; } }
     .home-links .circles .downw-circle {
       grid-area: downw;
-      margin-left: -50px; }
+      margin-right: -50px; }
       .home-links .circles .downw-circle i {
         padding: 15px;
-        font-size: 15px; }
+        font-size: 20px; }
       @media (min-width: 1024px) {
         .home-links .circles .downw-circle p {
           font-size: 20px; } }
@@ -547,15 +540,13 @@ footer {
             align-items: center; }
   .home-links i {
     color: black;
-    background: white;
     border-radius: 100%;
     text-align: center; }
     @media (min-width: 1024px) {
       .home-links i:hover {
-        color: red;
-        background: grey; } }
+        color: red; } }
   .home-links p {
-    color: white;
+    color: black;
     text-align: center;
     font-family: 'Pixel';
     font-size: 12px;

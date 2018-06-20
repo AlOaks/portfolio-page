@@ -1,5 +1,5 @@
 .audio-body {
-    background: url("../../assets/audio-back.jpg");
+    background: linear-gradient(rgb(61, 61, 61), white );
 }
 
 .audios {
@@ -35,7 +35,7 @@
         font-size: 20px;
 
         &:hover {
-            color: yellowgreen;
+            color: red;
         }
     }
 
