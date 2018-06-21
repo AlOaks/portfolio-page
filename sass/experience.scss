@@ -6,6 +6,11 @@
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
+
+        @include desktop {
+            font-size: 150px;
+            margin-top: 50px;
+        }
     }
 
     .carousel {
@@ -14,5 +19,6 @@
         margin-right: auto;
         height: auto;
         margin-bottom: 30px;
+        z-index: -1;
     }
 }

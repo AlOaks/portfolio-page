@@ -1,16 +1,26 @@
 $(document).ready(function (){
     
 
-    $('.nav-bar').hide();
     $('.footer-nav-bar').hide();
 
-    function navbar() {
-        $('.menu').click(function() {
-            $('.nav-bar').slideDown();
-        });
-    }
+    // DEsktop
 
-    navbar();
+    
+   function checkSize() {
+       if($('.nav-bar').css('flex-direction') == 'row') {
+           $('.nav-bar').show();
+           $('.header-info').show();
+           $('.dropdown').hide();
+       } else {
+           $('.dropdown').show();
+       }
+   }
+
+   checkSize();
+    
+    
    
+
+
    
 });

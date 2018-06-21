@@ -11,14 +11,29 @@
 </head>
 <body>
     <header>
-        <p class="menu">Menu <i class="fas fa-sort-down"></i></p>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle menu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#skill">Skill</a>
+                <a class="dropdown-item" href="#about">About</a>
+                <a class="dropdown-item" href="#exp">Experience</a>
+                <a class="dropdown-item" href="#cont">Contact</a>
+            </div>
+        </div>
         <ul class="nav-bar">
-            <li>About</li>
-            <li>Skills</li>
-            <li>Experience</li>
-            <li>Contact</li>
+            <a id="nav" href="#about"><li>About</li></a>
+            <a id="nav" href="#skill"><li>Skills</li></a>
+            <a id="nav" href="#exp"><li>Experience</li></a>
+            <a id="nav" href="#cont"><li>Contact</li></a>
         </ul>
+        <div class="header-info">
+            <p class="mail-header">jalberto.robles@outlook.com</p>
+            <p class="phone-header">+1 778 806 1684</p>
+        </div>
     </header>
+    
     <section class="hero-image">
         <div class="hero-info">
             <h1>Alberto Robles</h1>
@@ -30,7 +45,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section id="skill" class="skills">
         <h1>What do I know? You wonder...</h1>
         <p>I create responsive and functional websites using the following languages:</p>
         <div class="skills-bar">
@@ -45,14 +60,18 @@
             <img src="assets/jquery-logo.png" alt="jquery">
         </div>
     </section>
-    <section class="about-me">
-        <h1>Who am I? You ask...</h1>
-        <p>When I started studying Programming, I was so afraid I wouldn't like it. Surprisingly, I loved the idea of becoming a Front-End Developer. 
-            That is what drives my Programming "life". Despite the moments when your code doesn't work and you want to throw away your laptop, 
-            I enjoy coding all the way I am programming whatever I am programming.
-        </p>
+    <section id="about" class="about-me">
+        <div class="img"></div>
+        <div class="about-info">
+            <h1>Who am I? You ask...</h1>
+            <p>When I started studying Programming, I was so afraid I wouldn't like it. Surprisingly, I loved the idea of becoming a Front-End Developer. 
+                That is what drives my Programming "life". Despite the moments when your code doesn't work and you want to throw away your laptop, 
+                I enjoy coding all the way I am programming whatever I am programming.<br>
+                Back in Mexico City, I studied Audio Engineering and Musical Production, I have a passion for music and videogames too.
+            </p>
+        </div>
     </section>
-    <section class="experience">
+    <section id="exp" class="experience">
         <h1>What have I done? You question...</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -119,7 +138,7 @@
             </a>
         </div>
     </section>
-    <footer>
+    <footer id="cont">
         <h1>Reach me!</h1>
         <div class="footer-socials-contact">
             <div class="email">
@@ -136,6 +155,7 @@
             <a href="https://linkedin.com/in/albertrobles"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.js" integrity="sha256-R/b2LxEylxSN+YDuKXreqphxLBCJ1LXeabZHBQwe+HE=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

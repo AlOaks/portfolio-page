@@ -3,32 +3,79 @@ header {
     top: 3%;
     left: 5%;
 
-    .menu {
+    @include desktop {
+        position: fixed;
+        background: rgba(0,0,0, .5);
+        width: 100%;
+        display: flex;
+        top: 0;
+        left: 0;
+        height: 8%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-info {
         color: white;
+        margin-right: 40px;
+        visibility: hidden;
+
+        @include desktop {
+            visibility: visible;
+        }
     }
 
 
-    ul {
-        margin-top: 5px;
-        background: $grey;
-        margin-left: 10px;
+
+    .nav-bar {
+        visibility: hidden;
+
+        @include desktop {
+            background: none;
+            height: auto;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: row;
+            width: 30%;
+            justify-content: space-around;
+            visibility: visible;
+
+            a {
+                @include desktop {
+                    padding: 15px 15px;
+                }
+    
+                &:hover {
+                    text-decoration: none;
+                    background: rgba(1, 19, 99, .5);;
+                }
+            }
+
+            li {
+                padding: 20px;
+            }
+        }
         
         li {
             padding: 5px;
-            color: white;
+            
+        }
+    }
+
+    .hiding-bar {
+
+        margin-top: 5px;
+        background: rgba(62, 62, 62, .5);
+        margin-left: 10px;
+        height: auto;
+        width: 100px;
+        font-size: 1rem;
+        transition-duration: .5s;
+
+        li {
             border: 1px solid gray;
-
-            &:nth-of-type(2) {
-                border-top: 0;
-            }
-
-            &:nth-of-type(3) {
-                border-top: 0;
-            }
-
-            &:last-of-type {
-                border-top: 0;
-            }
+            padding: 5px;
+            color: white;
         }
     }
 
@@ -38,8 +85,13 @@ header {
     background-image: url("../../assets/hero-img-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
-    height: auto;
+    height: 70vh;
+    
+    @include desktop {
+        height: 100vh;
+    }
 
     .hero-info {
         display: flex;
@@ -47,12 +99,21 @@ header {
         flex-direction: column;
         align-items: center;
         padding-top: 100px;
+        height: 70vh;
         padding-bottom: 100px;
+        background: rgba(0,0,0, .5);
+
+         @include desktop {
+             height: 100%;
+         }
 
         .header-icons {
             margin-top: 30px;
             justify-content: space-between;
             align-items: center;
+            width: 50%;
+            display: flex;
+
         }
 
         i {
@@ -61,6 +122,15 @@ header {
             border-radius: 5%;
             padding: 10px 15px;
             text-align: center;
+            box-shadow: 1px 1px rgba(255, 255, 255, 0.3); 
+
+            &:hover {
+                background: $grey;
+            }
+
+            @include desktop {
+                font-size: 30px;
+            }
         }
 
         .resume {
@@ -69,17 +139,35 @@ header {
             background: $blue;
             text-decoration: none;
             text-align: center;
+            box-shadow: 1px 1px rgba(255, 255, 255, 0.3); 
+            border-radius: 5%;
+
+            &:hover {
+                background: $grey;
+            }
+
+            @include desktop {
+                font-size: 30px;
+            }
         }
 
         h1 {
             font-family: $Beatrix;
-            font-size: 100px;
+            font-size: 150px;
             color: white;
+
+            @include desktop {
+                font-size: 250px;
+            }
         }
 
         p {
             color: white;
-            font-size: 15px;
+            font-size: 25px;
+
+            @include desktop {
+                font-size: 30px;
+            }
         }
     }
 }

@@ -6,6 +6,10 @@ footer {
     align-items: center;
     height: 200px;
 
+    @include desktop {
+        height: 50vh;
+    }
+
     .email, .phone {
         display: flex;
         align-items: center;
@@ -23,6 +27,14 @@ footer {
             color: white;
             padding: 5px;
             font-size: 20px;
+
+            &:hover {
+                color: $blue;
+            }
+
+            @include desktop {
+                font-size: 40px;
+            }
         }
     }
 
@@ -44,6 +56,10 @@ footer {
         font-size: 80px;
         color: white;
         padding-top: 20px;
+
+        @include desktop {
+            font-size: 150px;
+        }
     }
 
     .footer-nav-bar {

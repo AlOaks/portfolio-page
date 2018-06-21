@@ -1,6 +1,26 @@
 .about-me {
 
-    background: $grey;
+    background: rgba(0,0,0, .5);
+
+    @include desktop {
+        height: 70vh;
+        display: flex;
+        justify-content: space-between;
+
+        .img {
+            background-image: url("../../assets/mypic.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: auto;
+        }
+
+        .about-info {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+        }
+    }
 
     h1 {
         font-size: 80px;
@@ -9,6 +29,10 @@
         padding-bottom: 20px;
         color: white;
         font-family: $Beatrix;
+
+        @include desktop {
+            font-size: 100px;
+        }
     }
 
     p {
@@ -17,8 +41,12 @@
         color: white;
         margin-left: auto;
         margin-right: auto;
-        line-height: 1.2rem;
         padding-bottom: 30px;
+
+        @include desktop {
+            font-size: 20px;
+            line-height: 2rem;
+        }
     }
 
 }
