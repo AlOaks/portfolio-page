@@ -421,3 +421,6 @@ footer {
 body {
   font-family: sans-serif;
   background: none; }
+
+section {
+  height: 80vh; }
