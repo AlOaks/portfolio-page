@@ -62,7 +62,8 @@ table {
 header {
   position: absolute;
   top: 3%;
-  left: 5%; }
+  left: 5%;
+  z-index: 2; }
   @media (min-width: 1024px) {
     header {
       position: fixed;
@@ -202,14 +203,14 @@ header {
           font-size: 30px; } }
     .hero-image .hero-info h1 {
       font-family: "Beatrix";
-      font-size: 150px;
+      font-size: 300px;
       color: white; }
       @media (min-width: 1024px) {
         .hero-image .hero-info h1 {
           font-size: 250px; } }
     .hero-image .hero-info p {
       color: white;
-      font-size: 25px; }
+      font-size: 40px; }
       @media (min-width: 1024px) {
         .hero-image .hero-info p {
           font-size: 30px; } }
@@ -335,8 +336,17 @@ header {
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  margin-bottom: 30px;
-  z-index: -1; }
+  margin-bottom: 30px; }
+  .experience .carousel .carousel-caption {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 0;
+    left: 0;
+    right: 0; }
+    .experience .carousel .carousel-caption h1 {
+      font-size: 50px; }
+    .experience .carousel .carousel-caption p {
+      font-size: 30px; }
 
 footer {
   background: black;
