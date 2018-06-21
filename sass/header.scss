@@ -1,0 +1,85 @@
+header {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+
+    .menu {
+        color: white;
+    }
+
+
+    ul {
+        margin-top: 5px;
+        background: $grey;
+        margin-left: 10px;
+        
+        li {
+            padding: 5px;
+            color: white;
+            border: 1px solid gray;
+
+            &:nth-of-type(2) {
+                border-top: 0;
+            }
+
+            &:nth-of-type(3) {
+                border-top: 0;
+            }
+
+            &:last-of-type {
+                border-top: 0;
+            }
+        }
+    }
+
+}
+
+.hero-image {
+    background-image: url("../../assets/hero-img-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+
+    .hero-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .header-icons {
+            margin-top: 30px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        i {
+            color: white;
+            background: $blue;
+            border-radius: 5%;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        .resume {
+            color: white;
+            padding: 10px 15px;
+            background: $blue;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: $Beatrix;
+            font-size: 100px;
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.skills {
+
+    // background: $blue;
+
+    p {
+        width: 80%;
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: $lightgrey;
+    }
+
+    h1 {
+        font-size: 80px;
+        text-align: center;
+        padding-top: 30px;
+        color: $lightgrey;
+        font-family: $Beatrix;
+    }
+    
+    .skills-bar {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 30px;
+
+        i {
+            font-size: 20px;
+            color: $lightgrey;
+
+            &:nth-of-type(odd) {
+                color: black;
+            }
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+}
