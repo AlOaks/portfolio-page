@@ -31,7 +31,7 @@
         font-family: $Beatrix;
 
         @include desktop {
-            font-size: 100px;
+            font-size: 75px;
         }
     }
 
@@ -44,7 +44,7 @@
         padding-bottom: 30px;
 
         @include desktop {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 2rem;
         }
     }

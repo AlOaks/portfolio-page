@@ -4,7 +4,7 @@
         height: 100vh;
     }
 
-    p {
+    .skills-description {
         width: 80%;
         text-align: center;
         margin-left: auto;
@@ -28,7 +28,7 @@
         font-family: $Beatrix;
 
         @include desktop {
-            font-size: 150px;
+            font-size: 100px;
             margin-top: 50px;
         }
     }
@@ -38,20 +38,69 @@
         margin-left: auto;
         margin-right: auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         padding-bottom: 30px;
+        
+        
+
+        div {
+
+            p {
+                visibility: hidden;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-family: $Beatrix;
+                text-align: center;
+                padding-top: 30px;
+                transition-duration: .5s;
+
+            }
+
+            &:hover {
+                p {
+                    visibility: visible;
+                    transition-duration: 1s;
+                }
+            }
+        }
+
 
         i {
             font-size: 20px;
             color: $lightgrey;
+            text-align: center;
 
             @include desktop {
                 font-size: 85px;
+                transition-duration: .5s;
+
+                p {
+                    visibility: hidden;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    font-family: $Beatrix;
+                    text-align: center;
+                    padding-top: 30px;
+                    transition-duration: .5s;
+                }
+
+                &:hover {
+                    font-size: 150px;
+                    transition-duration: .5s;
+                    color: $blue;
+
+                    p {
+                        visibility: visible;
+                        transition-duration: 1s;
+                    }
+                }
             }
 
             &:nth-of-type(odd) {
                 color: black;
+
             }
         }
 
@@ -60,6 +109,12 @@
 
             @include desktop {
                 width: 80px;
+                transition-duration: .5s;
+
+                &:hover {
+                    width: 140px;
+                    transition-duration: .5s;
+                }
             }
         }
     }

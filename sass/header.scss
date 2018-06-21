@@ -44,11 +44,12 @@ header {
             a {
                 @include desktop {
                     padding: 15px 15px;
+                    color: white;
                 }
     
                 &:hover {
                     text-decoration: none;
-                    background: rgba(1, 19, 99, .5);;
+                    background: rgba(1, 99, 9, 0.5);;
                 }
             }
 
@@ -83,7 +84,7 @@ header {
 }
 
 .hero-image {
-    background-image: url("../../assets/hero-img-bg.jpg");
+    background-image: url("../../assets/hero-img-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -125,12 +126,16 @@ header {
             text-align: center;
             box-shadow: 1px 1px rgba(255, 255, 255, 0.3); 
 
-            &:hover {
-                background: $grey;
-            }
-
             @include desktop {
                 font-size: 30px;
+                transition-duration: .5s;
+
+                
+                &:hover {
+                    background: $grey;
+                    font-size: 60px;
+                    transition-duration: .5s;
+                }
             }
         }
 
@@ -143,18 +148,23 @@ header {
             box-shadow: 1px 1px rgba(255, 255, 255, 0.3); 
             border-radius: 5%;
 
-            &:hover {
-                background: $grey;
-            }
+           
 
             @include desktop {
                 font-size: 30px;
+                transition-duration: .5s;
+
+                &:hover {
+                    background: $grey;
+                    font-size: 60px;
+                    transition-duration: .5s;
+                }
             }
         }
 
         h1 {
-            font-family: $Beatrix;
-            font-size: 300px;
+            font-family: 'Beatrix';
+            font-size: 50px;
             color: white;
 
             @include desktop {
@@ -164,8 +174,8 @@ header {
 
         p {
             color: white;
-            font-size: 40px;
-
+            font-size: 25px;
+            text-align: center;
             @include desktop {
                 font-size: 30px;
             }

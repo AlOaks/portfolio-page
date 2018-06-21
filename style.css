@@ -46,9 +46,9 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Pixel';
-  src: url("../../fonts/Pixel/Pixel.eot");
-  src: url("../../fonts/Pixel/Pixel.eot?#iefix") format("embedded-opentype"), url("../../fonts/Pixel/Pixel.woff2") format("woff2"), url("../../../fonts/Pixel/Pixel.woff") format("woff"), url("../../fonts/Pixel/Pixel.svg#Pixel") format("svg");
+  font-family: 'Luna';
+  src: url("../../fonts/Luna/Luna.eot");
+  src: url("../../fonts/Luna/Luna.eot?#iefix") format("embedded-opentype"), url("../../fonts/Luna/Luna.woff2") format("woff2"), url("../../fonts/Luna/Luna.woff") format("woff"), url("../../fonts/Luna/Luna.svg#Luna") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -108,11 +108,12 @@ header {
         visibility: visible; } }
   @media (min-width: 1024px) and (min-width: 1024px) {
     header .nav-bar a {
-      padding: 15px 15px; } }
+      padding: 15px 15px;
+      color: white; } }
     @media (min-width: 1024px) {
         header .nav-bar a:hover {
           text-decoration: none;
-          background: rgba(1, 19, 99, 0.5); }
+          background: rgba(1, 99, 9, 0.5); }
         header .nav-bar li {
           padding: 20px; } }
     header .nav-bar li {
@@ -132,7 +133,7 @@ header {
       color: white; }
 
 .hero-image {
-  background-image: url("../../assets/hero-img-bg.jpg");
+  background-image: url("../../assets/hero-img-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -176,41 +177,52 @@ header {
       display: flex; }
     .hero-image .hero-info i {
       color: white;
-      background: #011363;
+      background: #0d9618;
       border-radius: 5%;
       padding: 10px 15px;
       text-align: center;
       -webkit-box-shadow: 1px 1px rgba(255, 255, 255, 0.3);
               box-shadow: 1px 1px rgba(255, 255, 255, 0.3); }
-      .hero-image .hero-info i:hover {
-        background: #3e3e3e; }
       @media (min-width: 1024px) {
         .hero-image .hero-info i {
-          font-size: 30px; } }
+          font-size: 30px;
+          -webkit-transition-duration: .5s;
+                  transition-duration: .5s; }
+          .hero-image .hero-info i:hover {
+            background: #3e3e3e;
+            font-size: 60px;
+            -webkit-transition-duration: .5s;
+                    transition-duration: .5s; } }
     .hero-image .hero-info .resume {
       color: white;
       padding: 10px 15px;
-      background: #011363;
+      background: #0d9618;
       text-decoration: none;
       text-align: center;
       -webkit-box-shadow: 1px 1px rgba(255, 255, 255, 0.3);
               box-shadow: 1px 1px rgba(255, 255, 255, 0.3);
       border-radius: 5%; }
-      .hero-image .hero-info .resume:hover {
-        background: #3e3e3e; }
       @media (min-width: 1024px) {
         .hero-image .hero-info .resume {
-          font-size: 30px; } }
+          font-size: 30px;
+          -webkit-transition-duration: .5s;
+                  transition-duration: .5s; }
+          .hero-image .hero-info .resume:hover {
+            background: #3e3e3e;
+            font-size: 60px;
+            -webkit-transition-duration: .5s;
+                    transition-duration: .5s; } }
     .hero-image .hero-info h1 {
-      font-family: "Beatrix";
-      font-size: 300px;
+      font-family: 'Beatrix';
+      font-size: 50px;
       color: white; }
       @media (min-width: 1024px) {
         .hero-image .hero-info h1 {
           font-size: 250px; } }
     .hero-image .hero-info p {
       color: white;
-      font-size: 40px; }
+      font-size: 25px;
+      text-align: center; }
       @media (min-width: 1024px) {
         .hero-image .hero-info p {
           font-size: 30px; } }
@@ -219,7 +231,7 @@ header {
   .skills {
     height: 100vh; } }
 
-.skills p {
+.skills .skills-description {
   width: 80%;
   text-align: center;
   margin-left: auto;
@@ -228,7 +240,7 @@ header {
   padding-top: 20px;
   color: grey; }
   @media (min-width: 1024px) {
-    .skills p {
+    .skills .skills-description {
       font-size: 30px;
       padding-bottom: 100px;
       padding-top: 80px; } }
@@ -238,10 +250,10 @@ header {
   text-align: center;
   padding-top: 30px;
   color: grey;
-  font-family: "Beatrix"; }
+  font-family: "Luna"; }
   @media (min-width: 1024px) {
     .skills h1 {
-      font-size: 150px;
+      font-size: 100px;
       margin-top: 50px; } }
 
 .skills .skills-bar {
@@ -251,25 +263,67 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 30px; }
+  .skills .skills-bar div p {
+    visibility: hidden;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "Luna";
+    text-align: center;
+    padding-top: 30px;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s; }
+  .skills .skills-bar div:hover p {
+    visibility: visible;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s; }
   .skills .skills-bar i {
     font-size: 20px;
-    color: grey; }
+    color: grey;
+    text-align: center; }
     @media (min-width: 1024px) {
       .skills .skills-bar i {
-        font-size: 85px; } }
+        font-size: 85px;
+        -webkit-transition-duration: .5s;
+                transition-duration: .5s; }
+        .skills .skills-bar i p {
+          visibility: hidden;
+          font-size: 20px;
+          text-transform: capitalize;
+          font-family: "Luna";
+          text-align: center;
+          padding-top: 30px;
+          -webkit-transition-duration: .5s;
+                  transition-duration: .5s; }
+        .skills .skills-bar i:hover {
+          font-size: 150px;
+          -webkit-transition-duration: .5s;
+                  transition-duration: .5s;
+          color: #0d9618; }
+          .skills .skills-bar i:hover p {
+            visibility: visible;
+            -webkit-transition-duration: 1s;
+                    transition-duration: 1s; } }
     .skills .skills-bar i:nth-of-type(odd) {
       color: black; }
   .skills .skills-bar img {
     width: 25px; }
     @media (min-width: 1024px) {
       .skills .skills-bar img {
-        width: 80px; } }
+        width: 80px;
+        -webkit-transition-duration: .5s;
+                transition-duration: .5s; }
+        .skills .skills-bar img:hover {
+          width: 140px;
+          -webkit-transition-duration: .5s;
+                  transition-duration: .5s; } }
 
 .about-me {
   background: rgba(0, 0, 0, 0.5); }
@@ -303,10 +357,10 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
-    font-family: "Beatrix"; }
+    font-family: "Luna"; }
     @media (min-width: 1024px) {
       .about-me h1 {
-        font-size: 100px; } }
+        font-size: 75px; } }
   .about-me p {
     width: 80%;
     text-align: left;
@@ -316,20 +370,20 @@ header {
     padding-bottom: 30px; }
     @media (min-width: 1024px) {
       .about-me p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 2rem; } }
 
 .experience h1 {
   font-size: 80px;
-  font-family: "Beatrix";
+  font-family: "Luna";
   color: grey;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px; }
   @media (min-width: 1024px) {
     .experience h1 {
-      font-size: 150px;
-      margin-top: 50px; } }
+      font-size: 80px;
+      margin-top: 20px; } }
 
 .experience .carousel {
   width: 90%;
@@ -374,6 +428,9 @@ footer {
     footer .email p, footer .phone p {
       padding-left: 5px;
       color: white; }
+      @media (min-width: 1024px) {
+        footer .email p, footer .phone p {
+          font-size: 30px; } }
   footer .icons-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -383,7 +440,7 @@ footer {
       padding: 5px;
       font-size: 20px; }
       footer .icons-social i:hover {
-        color: #011363; }
+        color: #0d9618; }
       @media (min-width: 1024px) {
         footer .icons-social i {
           font-size: 40px; } }
@@ -398,18 +455,23 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-left: 10%;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 30px; }
     footer .footer-socials-contact i {
       color: white;
       padding: 5px; }
+      @media (min-width: 1024px) {
+        footer .footer-socials-contact i {
+          font-size: 30px; } }
   footer h1 {
-    font-family: "Beatrix";
-    font-size: 80px;
+    font-family: "Luna";
+    font-size: 40px;
     color: white;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-top: 40px; }
     @media (min-width: 1024px) {
       footer h1 {
-        font-size: 150px; } }
+        font-size: 100px; } }
   footer .footer-nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -421,6 +483,3 @@ footer {
 body {
   font-family: sans-serif;
   background: none; }
-
-section {
-  height: 80vh; }
