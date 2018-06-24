@@ -214,11 +214,17 @@ header {
                     transition-duration: .5s; } }
     .hero-image .hero-info h1 {
       font-family: 'Beatrix';
-      font-size: 50px;
+      font-size: 150px;
       color: white; }
       @media (min-width: 1024px) {
         .hero-image .hero-info h1 {
-          font-size: 250px; } }
+          font-size: 250px;
+          -webkit-transition-duration: 1s;
+                  transition-duration: 1s; }
+          .hero-image .hero-info h1:hover {
+            font-size: 350px;
+            -webkit-transition-duration: 1s;
+                    transition-duration: 1s; } }
     .hero-image .hero-info p {
       color: white;
       font-size: 25px;
@@ -241,23 +247,24 @@ header {
   color: grey; }
   @media (min-width: 1024px) {
     .skills .skills-description {
-      font-size: 30px;
+      font-size: 22px;
       padding-bottom: 100px;
       padding-top: 80px; } }
 
 .skills h1 {
-  font-size: 80px;
+  font-size: 35px;
   text-align: center;
   padding-top: 30px;
   color: grey;
-  font-family: "Luna"; }
+  font-family: "Luna";
+  margin-top: 30px; }
   @media (min-width: 1024px) {
     .skills h1 {
-      font-size: 100px;
-      margin-top: 50px; } }
+      font-size: 80px;
+      margin-top: 120px; } }
 
 .skills .skills-bar {
-  width: 90%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -265,15 +272,26 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 30px; }
-  .skills .skills-bar div p {
+  margin-bottom: 50px; }
+  @media (min-width: 1024px) {
+    .skills .skills-bar {
+      margin-bottom: 0px; } }
+  .skills .skills-bar .skill-name {
+    display: none; }
+    @media (min-width: 1024px) {
+      .skills .skills-bar .skill-name {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  .skills .skills-bar div .skill-name {
     visibility: hidden;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: capitalize;
     font-family: "Luna";
     text-align: center;
@@ -352,15 +370,16 @@ header {
             -ms-flex-direction: column;
                 flex-direction: column; } }
   .about-me h1 {
-    font-size: 80px;
+    font-size: 35px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
     color: white;
     font-family: "Luna"; }
     @media (min-width: 1024px) {
       .about-me h1 {
-        font-size: 75px; } }
+        font-size: 75px;
+        margin-top: 30px; } }
   .about-me p {
     width: 80%;
     text-align: left;
@@ -374,19 +393,30 @@ header {
         line-height: 2rem; } }
 
 .experience h1 {
-  font-size: 80px;
+  font-size: 30px;
   font-family: "Luna";
   color: grey;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px; }
   @media (min-width: 1024px) {
     .experience h1 {
       font-size: 80px;
-      margin-top: 20px; } }
+      margin-top: 50px;
+      margin-bottom: 50px; } }
+
+@media (min-width: 1024px) {
+  .experience .carousel-item {
+    margin-bottom: 50px; } }
+
+.experience .carousel-item img {
+  height: 200px; }
+  @media (min-width: 1024px) {
+    .experience .carousel-item img {
+      height: 600px; } }
 
 .experience .carousel {
-  width: 90%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
@@ -397,10 +427,16 @@ header {
     margin-left: 0;
     left: 0;
     right: 0; }
-    .experience .carousel .carousel-caption h1 {
-      font-size: 50px; }
+    .experience .carousel .carousel-caption a {
+      text-decoration: none; }
+    @media (min-width: 1024px) {
+      .experience .carousel .carousel-caption h5 {
+        font-size: 40px;
+        color: white; }
+        .experience .carousel .carousel-caption h5:hover {
+          color: green; } }
     .experience .carousel .carousel-caption p {
-      font-size: 30px; }
+      font-size: 20px; }
 
 footer {
   background: black;
@@ -465,13 +501,14 @@ footer {
           font-size: 30px; } }
   footer h1 {
     font-family: "Luna";
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     padding-top: 20px;
-    margin-top: 40px; }
+    margin-top: 15px; }
     @media (min-width: 1024px) {
       footer h1 {
-        font-size: 100px; } }
+        font-size: 80px;
+        margin-top: 40px; } }
   footer .footer-nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;

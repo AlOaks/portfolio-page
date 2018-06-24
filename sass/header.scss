@@ -164,13 +164,21 @@ header {
 
         h1 {
             font-family: 'Beatrix';
-            font-size: 50px;
+            font-size: 150px;
             color: white;
 
             @include desktop {
                 font-size: 250px;
+                transition-duration: 1s;
+                
+                &:hover {
+                    font-size: 350px;
+                    transition-duration: 1s;
+                }
+                    
             }
         }
+
 
         p {
             color: white;

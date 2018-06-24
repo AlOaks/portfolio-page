@@ -1,20 +1,36 @@
 .experience {
     h1 {
-        font-size: 80px;
+        font-size: 30px;
         font-family: $Beatrix;
         color: $lightgrey;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 40px;
         padding-bottom: 20px;
 
         @include desktop {
             font-size: 80px;
-            margin-top: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .carousel-item {
+        
+        @include desktop {
+            margin-bottom: 50px;
+        }
+
+        img {
+            height: 200px;
+
+            @include desktop {
+                height: 600px;
+            }
         }
     }
 
     .carousel {
-        width: 90%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
         height: auto;
@@ -27,13 +43,26 @@
             left: 0;
             right: 0;
 
-            h1 {
-                font-size: 50px;
+            a {
+                text-decoration: none;
 
             }
 
+            h5 {
+
+                @include desktop {
+                    font-size: 40px;
+                    color: white;
+
+                    
+                    &:hover {
+                        color: green;
+                    }
+                }
+            }
+
             p {
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     }
